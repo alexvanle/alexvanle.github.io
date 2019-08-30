@@ -1,12 +1,25 @@
+html{
+    scroll-behavior: smooth;
+}
 .header{
     background-image: url(../media/futuristic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100vh;
-    width: 100vw; */
+    width: 100vw; */ 
+    /* ask bryce about viewport height to fill up screen */
     color: white;
     text-align: center;
     height: 300px;
+    padding-top: 68px;
+}
+.top-bar{
+    top: 0; left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: #252934;
+    border-bottom: 2px solid #fff;
 }
 .top-bar ul{
     list-style: none;
@@ -23,19 +36,29 @@
     text-transform: uppercase;
     display: inline-block;
 }
-.view-my-work{
+.View-My-Work{
     background: #252934;
     padding: 14px;
     color: white;
     border-radius: 5px;
     text-decoration: none;
+    margin-top: 5px;
 }
+/* .button:hover{
+    box-shadow: 0px 0px 10px 5px #fff;
+}
+.little-about img:hover{
+    box-shadow: 0px 0px 12px 5px blueviolet;
+} */
 .about{
     background-color: #bbedfd;
 }
 .about h1{
     text-align: center;
     border-bottom: 2px grey solid;
+}
+.about h2{
+    font-size: 25px;
 }
 .projects{
     background-color: #f5f5f5;
@@ -54,11 +77,32 @@
 }
 .contact a{
     color: blanchedalmond;
+    text-decoration: none;
 }
-.little-about img{
-    height: 200px;
-    width: 200px;
+.contact ul{
+    list-style: none;
+    /* font-size: 38px; */
+    text-align: center;
+}
+.contact p{
+    text-align: center;
+    /* font-size: 20px; */
 }
 .projects img{
     width: 100%;
+}
+.alexle{
+    animation: alexle 3s infinite;
+}
+@keyframes alexle{
+    0%{
+        opacity: ;
+        transform: scale(0) rotate3d(-1)
+    }
+    50%{
+        transform: rotateY(170deg)
+    }
+    100%{
+        opacity: 1;
+    }
 }
