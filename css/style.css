@@ -1,6 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
+/* .body{
+    font-family: 'Roboto', sans-serif;
+} */
 .header{
     background-image: url(../media/futuristic.jpg);
     background-repeat: no-repeat;
@@ -12,6 +15,7 @@ html{
     text-align: center;
     height: 300px;
     padding-top: 68px;
+    font-family: 'Roboto', sans-serif;
 }
 .top-bar{
     top: 0; left: 0;
@@ -28,6 +32,9 @@ html{
 .top-bar li{
     display: inline;
 }
+.top-bar a:hover{
+    color: #bbedfd;
+}
 .top-bar a{
     text-decoration: none;
     color: white;
@@ -43,6 +50,10 @@ html{
     border-radius: 5px;
     text-decoration: none;
     margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.View-My-Work:hover{
+    box-shadow:0px 0px 10px 5px #fff;
 }
 /* .button:hover{
     box-shadow: 0px 0px 10px 5px #fff;
@@ -52,6 +63,7 @@ html{
 } */
 .about{
     background-color: #bbedfd;
+    font-family: 'Roboto', sans-serif;
 }
 .about h1{
     text-align: center;
@@ -62,47 +74,65 @@ html{
 }
 .projects{
     background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
 }
 .projects h1{
     text-align: center;
     border-bottom: 2px grey solid;
 }
+.picture-projects p{
+    font-weight: bolder;
+}
 .contact{
     background-color: #252934;
     color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
 }
 .contact h1{
     text-align: center;
     border-bottom: 2px grey solid;
 }
 .contact a{
-    color: blanchedalmond;
+    color: #bbedfd;
     text-decoration: none;
 }
 .contact ul{
     list-style: none;
-    /* font-size: 38px; */
+    font-size: 17px;
     text-align: center;
+
 }
 .contact p{
     text-align: center;
-    /* font-size: 20px; */
+    font-size: 22px;
+
+}
+.View-My-Work:hover span{
+    display: inline-block;
+    animation: View-My-Work 1s forwards;
 }
 .projects img{
     width: 100%;
 }
 .alexle{
-    animation: alexle 3s infinite;
+    animation: alexle 3s forwards;
 }
 @keyframes alexle{
     0%{
-        opacity: ;
-        transform: scale(0) rotate3d(-1)
+        opacity: -2;
+    }
+    45%{
+        opacity: -1;
     }
     50%{
-        transform: rotateY(170deg)
+        transform: translateX(-600px);
     }
     100%{
         opacity: 1;
+    }
+}
+@keyframes View-My-Work{
+    100%{
+        transform: rotate(90deg);
     }
 }
