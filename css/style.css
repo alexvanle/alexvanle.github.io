@@ -215,7 +215,7 @@ html{
         transform: rotate(90deg);
     }
 }
-@media (max-width: 426px){
+@media (max-width: 768px){
     .contact p{
         padding-bottom: 30px;
     }
