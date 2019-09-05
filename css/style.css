@@ -5,7 +5,7 @@ html{
     font-family: 'Roboto', sans-serif;
 } */
 .header{
-    background-image: url(../media/futuristic.jpg);
+    background-image: url(../media/futuristic2.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100vh;
@@ -13,9 +13,16 @@ html{
     /* ask bryce about viewport height to fill up screen */
     color: white;
     text-align: center;
-    height: 300px;
+    height: 100vh;
     padding-top: 68px;
     font-family: 'Roboto', sans-serif;
+}
+.header h2{
+    font-size: 40px;
+    margin-top: 100px;
+}
+.wrapper1{
+    padding-top: 100px;
 }
 .top-bar{
     top: 0; left: 0;
@@ -53,7 +60,17 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 .View-My-Work:hover{
-    box-shadow:0px 0px 10px 5px #fff;
+    box-shadow:0px 0px 10px 5px #bbedfd;
+    background: #fff;
+    padding: 14px;
+    color: grey;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.arrow{
+    font-size: 18px;
 }
 /* .button:hover{
     box-shadow: 0px 0px 10px 5px #fff;
@@ -61,61 +78,123 @@ html{
 .little-about img:hover{
     box-shadow: 0px 0px 12px 5px blueviolet;
 } */
+#home{
+    position: absolute;
+    top: -200px;
+}
+#about, #project, #contact{
+    position: absolute;
+    top: -50px;
+}
 .about{
     background-color: #bbedfd;
     font-family: 'Roboto', sans-serif;
-}
-.about h1{
-    text-align: center;
-    border-bottom: 2px grey solid;
+    padding-bottom: 20px;
 }
 .about h2{
+    text-align: center;
+    border-bottom: 2px grey solid;
+    font-size: 40px;
+}
+.about h3{
     font-size: 25px;
 }
-.projects{
-    background-color: #f5f5f5;
-    font-family: 'Roboto', sans-serif;
+.about p{
+    font-size: 17px;
 }
-.projects h1{
+.about li{
+    font-size: 17px;
+}
+.projects{
+    background-color: #c3c3c3;
+    font-family: 'Roboto', sans-serif;
+    height: 100%vh;
+    padding-bottom: 20px;
+}
+.projects h2{
+    font-size: 40px;
+}
+.projects p{
+    font-size: 20px;
+}
+.projects h2{
     text-align: center;
     border-bottom: 2px grey solid;
 }
+.projects img{
+    width: 100%;
+    text-align: center;
+}
 .picture-projects p{
-    font-weight: bolder;
+    font-size: 16px;
+}
+.certificate{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.certificate h2{
+    text-align: center;
+    border-bottom: 2px grey solid;
+    font-size: 40px;
+}
+.certificate img{
+    width: 50%;
 }
 .contact{
     background-color: #252934;
-    color: blanchedalmond;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    padding-top: 100px;
 }
-.contact h1{
+.contact h2{
     text-align: center;
     border-bottom: 2px grey solid;
+    font-size: 40px;
+}
+.contact h3{
+    text-align: center;
+    font-size: 30px;
 }
 .contact a{
-    color: #bbedfd;
+    color: #00568b;
     text-decoration: none;
 }
 .contact ul{
     list-style: none;
     font-size: 17px;
     text-align: center;
-
 }
 .contact p{
     text-align: center;
-    font-size: 22px;
-
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+.info{
+    text-align: center;
+}
+.info2{
+    font-size: 30px;
+    background-color: #00568b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
 }
 .View-My-Work:hover span{
     display: inline-block;
     animation: View-My-Work 1s forwards;
 }
-.projects img{
-    width: 100%;
-}
-.alexle{
+/* #project{
+    position: absolute;
+    top: -50px;
+} */
+
+
+/* .alexle{
     animation: alexle 3s forwards;
+} */
+.alexle:hover{
+    animation: alexle 2s forwards;
 }
 @keyframes alexle{
     0%{
@@ -134,5 +213,10 @@ html{
 @keyframes View-My-Work{
     100%{
         transform: rotate(90deg);
+    }
+}
+@media (max-width: 426px){
+    .contact p{
+        padding-bottom: 35px;
     }
 }
