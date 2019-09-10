@@ -220,5 +220,14 @@ html{
 @media (max-width: 768px){
     .contact p{
         padding-bottom: 30px;
+        font-size: 23px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .contact h3{
+    text-align: center;
+    font-size: 25px;
     }
 }
