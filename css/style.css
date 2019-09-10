@@ -8,12 +8,10 @@ html{
     background-image: url(../media/futuristic2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh;
-    width: 100vw; */ 
-    /* ask bryce about viewport height to fill up screen */
     color: #fff;
-    text-align: center;
     height: 100vh;
+    /* ask bryce about viewport height to fill up screen */
+    text-align: center;
     padding-top: 68px;
     font-family: 'Roboto', sans-serif;
 }
@@ -25,13 +23,13 @@ html{
     padding-top: 100px;
 }
 .top-bar{
-    top: 0; left: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 5;
     background-color: #252934;
     border-bottom: 2px solid #fff;
+    width: 100%;
+    position: fixed;
     padding-top: 10px;
+    top: 0; left: 0;
+    z-index: 5;
 }
 .top-bar ul{
     list-style: none;
@@ -39,9 +37,6 @@ html{
 }
 .top-bar li{
     display: inline;
-}
-.top-bar a:hover{
-    color: #bbedfd;
 }
 .top-bar a{
     text-decoration: none;
@@ -51,24 +46,27 @@ html{
     text-transform: uppercase;
     display: inline-block;
 }
+.top-bar a:hover{
+    color: #bbedfd;
+}
 .View-My-Work{
-    background: #252934;
-    padding: 14px;
+    background-color: #252934;
     color: #fff;
-    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    padding: 14px;
     text-decoration: none;
     margin-top: 5px;
-    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
 }
 .View-My-Work:hover{
-    box-shadow:0px 0px 10px 5px #bbedfd;
-    background: #fff;
-    padding: 14px;
+    background-color: #fff;
     color: grey;
+    box-shadow:0px 0px 10px 5px #bbedfd;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    padding: 14px;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 5px;
-    font-family: 'Roboto', sans-serif;
 }
 .arrow{
     font-size: 18px;
@@ -93,9 +91,9 @@ html{
     padding-bottom: 20px;
 }
 .about h2{
-    text-align: center;
     border-bottom: 2px grey solid;
     font-size: 40px;
+    text-align: center;
 }
 .about h3{
     font-size: 25px;
@@ -114,13 +112,11 @@ html{
 }
 .projects h2{
     font-size: 40px;
+    border-bottom: 2px grey solid;
+    text-align: center;
 }
 .projects p{
     font-size: 20px;
-}
-.projects h2{
-    text-align: center;
-    border-bottom: 2px grey solid;
 }
 .projects img{
     width: 100%;
@@ -130,13 +126,13 @@ html{
     font-size: 16px;
 }
 .certificate{
-    text-align: center;
     padding-bottom: 50px;
+    text-align: center;
 }
 .certificate h2{
-    text-align: center;
     border-bottom: 2px grey solid;
     font-size: 40px;
+    text-align: center;
 }
 .certificate img{
     width: 50%;
@@ -149,36 +145,36 @@ html{
     padding-top: 100px;
 }
 .contact h2{
-    text-align: center;
     border-bottom: 2px grey solid;
     font-size: 40px;
+    text-align: center;
 }
 .contact h3{
-    text-align: center;
     font-size: 30px;
+    text-align: center;
+}
+.contact p{
+    font-size: 28px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.contact ul{
+    font-size: 17px;
+    list-style: none;
+    text-align: center;
 }
 .contact a{
     color: #00568b;
     text-decoration: none;
 }
-.contact ul{
-    list-style: none;
-    font-size: 17px;
-    text-align: center;
-}
-.contact p{
-    text-align: center;
-    font-size: 28px;
-    padding-bottom: 50px;
-}
 .info{
-    text-align: center;
     padding-top: 30px;
+    text-align: center;
 }
 .info2{
-    font-size: 30px;
     background-color: #00568b;
     color: #fff;
+    font-size: 30px;
     padding: 20px;
     border-radius: 8px;
 }
@@ -190,8 +186,6 @@ html{
     position: absolute;
     top: -50px;
 } */
-
-
 /* .alexle{
     animation: alexle 3s forwards;
 } */
@@ -223,7 +217,6 @@ html{
         font-size: 23px;
     }
 }
-
 
 @media (max-width: 768px){
     .contact h3{
